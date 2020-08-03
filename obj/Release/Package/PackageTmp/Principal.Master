@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="WebAppRuleta.Principal" EnableTheming="true" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="App_Themes/Theme/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <asp:Menu ID="mnPrincipal" runat="server" Orientation="Horizontal" BackColor="Black" Width="100%" CssClass="navbar-dark bg-dark" StaticSelectedStyle-CssClass="active" StaticMenuStyle-CssClass="nav navbar-nav">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/frmRuleta.aspx" Text="Ruleta"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/frmJugador.aspx" Text="Jugadores"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div class="col-lg-12 col-md-12" style="margin-top: 4%;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
