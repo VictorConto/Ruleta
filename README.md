@@ -5,3 +5,6 @@ Pasos:
 - El aplicativo inicia en la vista de la ruleta, en la cual se deben agregar los jugadores a particitar en la partida.
 - Para crear jugadores ir en la parte del menu a la vista, alli se pueden crear, editar y borrar jugadores
 - Con los jugadores ya cargados para la partida, dar click en girar, segun el color y las cantidad de porcentaje se puede ver en la tabla la cantidad ganada o perdida
+
+#Nota:
+El proyecto utiliza base de datos SQL SERVER, adjunto se encuentra archivo Tabla.txt con el script de creacion
